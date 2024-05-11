@@ -6,7 +6,7 @@ function App() {
   const [status, setStatus] = useState(null);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/')
+    fetch('http://13.202.59.39:5000/')
       .then(response => response.json())
       .then(data => {
         setStatus(data.status);
