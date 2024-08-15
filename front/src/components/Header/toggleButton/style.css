@@ -1,0 +1,92 @@
+/* components/ToggleButton.css */
+
+.toggle-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle-button span {
+    margin-right: 10px;
+  }
+  
+  .theme-toggle {
+    display: none;
+  }
+  
+  .toggle-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-switch {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle:checked + .toggle-background {
+    background-color: #333;
+  }
+  
+  .theme-toggle:checked + .toggle-background + .toggle-switch {
+    transform: translateX(30px);
+  }
+  
+
+  /* Custom CSS for Dark Mode Toggle Switch */
+.form-check {
+    margin-bottom: 1rem;
+  }
+  
+  .form-check .form-check-input {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-check .form-check-input:checked {
+    background-color: #333;
+  }
+  
+  .form-check .form-check-input::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-check .form-check-input:checked::after {
+    transform: translateX(20px);
+  }
+  
+  .form-check .custom-control-label {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  

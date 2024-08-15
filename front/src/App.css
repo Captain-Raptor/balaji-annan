@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+:root {
+  
+--russian-violet: #11012dff;
+--black: #000000ff;
+--veronica: #9539e3ff;
+--grape: #762eb9ff;
+--grape-2: #6e2cacff;
+--tekhelet: #581f88ff;
+--dark-purple: #170323ff;
+
+
+--russian-violet: hsla(262, 96%, 9%, 1);
+--black: hsla(0, 0%, 0%, 1);
+--veronica: hsla(272, 75%, 56%, 1);
+--grape: hsla(271, 60%, 45%, 1);
+--grape-2: hsla(271, 59%, 42%, 1);
+--tekhelet: hsla(273, 63%, 33%, 1);
+--dark-purple: hsla(278, 84%, 7%, 1);
+  /* Primary Colors */
+  --primary-color: var(--russian-violet);
+  --secondary-color: var(--veronica);
+
+  /* Light Theme */
+  --text-primary-light: hsla(0, 0%, 0%, 1);
+  --text-secondary-light: hsla(0, 0%, 42%, 1);
+  --bg-primary-light: hsla(0, 0%, 100%, 1);
+  --bg-secondary-light: hsla(0, 0%, 83%, 1);
+  --bg-navbar-light: hsla(212, 96%, 85%, 1);
+
+  /* Dark Theme */
+  --text-primary-dark: hsla(0, 0%, 100%, 1);
+  --text-secondary-dark: hsla(0, 0%, 63%, 1);
+  --bg-primary-dark: hsla(262, 96%, 9%, 1);
+  --bg-secondary-dark: hsla(0, 0%, 10%, 1);
+  --bg-navbar-dark: hsla(212, 96%, 40%, 1);
+
+  /* Other Colors */
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-gray: hsla(0, 0%, 50%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+
+  /* Accent Colors */
+  --accent-color: var(--veronica);
+  --hover-color: var(--grape);
+
+  /* Font Sizes */
+  --text-large: 2.5rem;
+  --text-medium: 1.5rem;
+  --text-small: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+  --bg-navbar: var(--bg-navbar-light);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --bg-navbar: var(--bg-navbar-dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

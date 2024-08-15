@@ -1,0 +1,12 @@
+:root {
+  --background-color: #f5f0ff;
+  --primary-color: #333;
+  --secondary-color: #666;
+  --highlight-color: #32a852;
+  --font-family: 'Arial, sans-serif';
+  --button-padding: 10px 20px;
+  --button-border-radius: 5px;
+  --text-color-light: #888;
+  --text-color-dark: #333;
+  --font-weight-bold: bold;
+}
